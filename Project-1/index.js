@@ -18,4 +18,10 @@ app.get('/users', (req, res) => {
     return res.send(html);
 });
 
+app.get('/api/users/:id', (req, res) => {
+    const paramId = req.params.id; 
+    const user = users.filter((item) => item.id == paramId); 
+    return res.json(user);
+})
+
 app.listen(PORT, () => console.log(`server listening on port ${PORT}`));
