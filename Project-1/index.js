@@ -20,7 +20,7 @@ app.get('/users', (req, res) => {
 
 app.get('/api/users/:id', (req, res) => {
     const paramId = req.params.id; 
-    const user = users.filter((item) => item.id == paramId); 
+    const user = users.find((item) => item.id == paramId); 
     return res.json(user);
 })
 
