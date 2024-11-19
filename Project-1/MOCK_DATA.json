@@ -58,5 +58,11 @@
     "first_name": "Zachariah",
     "last_name": "Illston",
     "email": "zillston9@w3.org"
+  },
+  {
+    "first_name": "Kim",
+    "last_name": "Chan",
+    "email": "kim.chan@test.com",
+    "id": 11
   }
 ]
